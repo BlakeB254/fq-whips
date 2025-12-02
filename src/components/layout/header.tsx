@@ -44,15 +44,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-border/40 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex h-20 items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+        <div className="flex h-24 lg:h-28 items-center justify-between">
+          {/* Logo - Large and Prominent */}
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <Image
               src="/images/logo.png"
               alt="Fast Quick Whipz"
-              width={240}
-              height={64}
-              className="h-14 w-auto"
+              width={320}
+              height={80}
+              className="h-16 sm:h-20 lg:h-24 w-auto"
               priority
             />
           </Link>
@@ -146,9 +146,9 @@ export function Header() {
                   <Image
                     src="/images/logo.png"
                     alt="Fast Quick Whipz"
-                    width={180}
-                    height={48}
-                    className="h-10 w-auto"
+                    width={240}
+                    height={60}
+                    className="h-14 w-auto"
                   />
                   <SheetClose asChild>
                     <Button variant="ghost" size="icon">
